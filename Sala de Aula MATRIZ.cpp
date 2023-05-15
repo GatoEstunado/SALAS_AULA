@@ -5,14 +5,14 @@ int main() {
     // Variáveis
     int media;
     int sala[2][3];
-    
-    // Matriz
-    sala[0][0] = 35;
-    sala[0][1] = 4;  
-    sala[0][2] = 22;
-    sala[1][0] = 20;
-    sala[1][1] = 36;
-    sala[1][2] = 30;
+   
+    // Gerar o 'loop', e possibilitar a inserção de dados pelo usuário
+   for (int i = 0; i < 2; i++) {
+        for (int j = 0; j < 3; j++) {
+            cout << "Digite o número de alunos na sala " << (i * 3 + j + 1) << ": ";
+            cin >> sala[i][j];
+        }
+   }
     
     // Usando 2x FOR, para as duas colunas da matriz
     // Interface para apresentar as salas e os alunos
