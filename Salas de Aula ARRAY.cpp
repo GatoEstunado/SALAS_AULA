@@ -8,17 +8,10 @@ int main() {
     int pessoas;
     int sala[6];
     
-    // Array
-    sala[0] = 35;
-    sala[1] = 4;
-    sala[2] = 22;
-    sala[3] = 20;
-    sala[4] = 36;
-    sala[5] = 30;
-    
-    // Introduzir o FOR, para a colocação das Salas. Ex: 'Sala 1: 35'.
+    // FOR para a colocação dos alunos pelo usuário
     for (int i = 0; i < 6; i++) {
-    cout << "Sala " << i +1 << ": " << sala[i] << endl;
+        cout << "Digite o número de alunos na sala " << i + 1 << ": ";
+        cin >> sala[i];
     }
     
     // Somar as salas e calcular a média
@@ -37,4 +30,3 @@ int main() {
     }
     return 0;
 }
-    
