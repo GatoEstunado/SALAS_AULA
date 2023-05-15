@@ -21,12 +21,23 @@ int main() {
     // Interface para entregar a médias de alunos por sala
     cout << "A media de aluno por sala eh: " << (media) << endl;
     
-    // Interface e uso do FOR, para entregar as salas que estão acima da média.
-    cout << "As seguintes salas estão acima da média: ";
-    for (int i = 0; i < 6; i++) {
-        if (sala[i] > media) {
-            cout << "Sala " << i + 1 << ", ";
+    // Variáveis
+    int salaMaior = 0;
+    int salaMenor = 0;
+    
+    // Calcular a sala com maior e menor quantidade de alunos
+    for (int i = 1; i < 6; i++) {
+        if (sala[i] > sala[salaMaior]) {
+            salaMaior = i;
+        }
+        if (sala[i] < sala[salaMenor]) {
+            salaMenor = i;
         }
     }
-    return 0;
+    
+    // Interface que apresenta as salas com maior e menor quantidade de alunos
+    cout << "A sala com a maior quantidade de alunos é a: Sala " << salaMaior + 1 << endl;
+    
+    cout << "A sala com a menor quantidade de alunos é a: Sala " << salaMenor + 1 << endl;
+ return 0;   
 }
