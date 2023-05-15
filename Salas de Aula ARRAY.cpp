@@ -8,7 +8,7 @@ int main() {
     int pessoas;
     int sala[6];
     
-    // FOR para a colocação dos alunos pelo usuário
+    // FOR para gerar um 'loop', junto a colocação dos alunos pelo usuário
     for (int i = 0; i < 6; i++) {
         cout << "Digite o número de alunos na sala " << i + 1 << ": ";
         cin >> sala[i];
