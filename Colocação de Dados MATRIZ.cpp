@@ -6,7 +6,7 @@ int main() {
     int media;
     int sala[2][3];
    
-    // Gerar o 'loop', e possibilitar a inserção de dados pelo usuário
+   // Loop, junto a inserção de dados pelo usuário
    for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 3; j++) {
             cout << "Digite o número de alunos na sala " << (i * 3 + j + 1) << ": ";
@@ -14,13 +14,7 @@ int main() {
         }
    }
     
-    // Usando 2x FOR, para as duas colunas da matriz
-    // Interface para apresentar as salas e os alunos
-    for (int i = 0; i < 2; i++) {
-        for (int j = 0; j < 3; j++) {
-            cout << "Sala " << (i * 3 + j + 1) << ": " << sala[i][j] << endl;
-        }
-    }
+ 
     
     // Somar os alunos
     int total = 0;
@@ -35,18 +29,26 @@ int main() {
     
     // Interface para apresentar a média de alunos por sala
     cout << "A media de aluno por sala eh: " << media << endl;
-
-    // Interface para apresentar as salas que estão acima da média
-    cout << "As seguintes salas estão acima da média: ";
     
-    // Usando 2x FOR, para as duas colunas da matriz
-    // Para apresentar as salas de forma "correta"
+    // Variáveis
+   int salaMaior = 0;
+   int salaMenor = 0;
+   
+   // Calcular as salas que tem a maior e a menor quantidade de alunos
     for (int i = 0; i < 2; i++) {
         for (int j = 0; j < 3; j++) {
-            if (sala[i][j] > media) {
-                cout << "Sala " << (i * 3 + j + 1) << ", ";
+            if (sala[i][j] > sala[salaMaior / 3][salaMaior % 3]) {
+                salaMaior = i * 3 + j;
+            }
+
+            if (sala[i][j] < sala[salaMenor / 3][salaMenor % 3]) {
+                salaMenor = i * 3 + j;
             }
         }
     }
+    // Interface para apresentar as salas com maior e menos quantidade de alunos
+    cout << "A sala com maior quantidade de alunos é a Sala: " << salaMaior + 1 << endl;
+    cout << "A sala com menor quantidade de alunos é a Sala: " << salaMenor + 1 << endl;
+    
     return 0;
 }
