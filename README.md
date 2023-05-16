@@ -1,4 +1,4 @@
-# Contrutor para um Jogo de Adivinhação
+# Código para calcular a média de alunos em salas e dizer quais ultrapassam tal
 Versão: 1.0
 
 Status do Projeto:  ✔️ Concluído
@@ -32,11 +32,13 @@ Status do Projeto:  ✔️ Concluído
 
 
 ### Descrição do Projeto 🧾✏️
-Código para gerar um jogo de adivinhação de números de 0-100, com o uso de "construtor".
+Código para calcular a média de salas de aulas, dizer quais ultrapassam essa média e apresentar tudo ao o usuário. Utilizando ARRAY e MATRIZ.
 
 
 ### Funcionalidades ⚙️
 ✔️ Funcionalidade 1
+
+✔️ Funcionalidade 2
 
 
 
@@ -56,7 +58,6 @@ Um leitor de linguagens de programação, sendo a utilizada aqui a C++.
 ### Como Rodar ▶️
 Basta rodar a aplicação e seguir as instruções por ela dadas.
 
-O projeto serve para calcular a área de triângulos e compará-los.
 
 
 
@@ -77,10 +78,6 @@ Não usa banco de dados.
 ![image](https://user-images.githubusercontent.com/126710731/232641595-0d02a251-894e-4f87-b3b8-33ce204a6da7.png)
 
 *iostream*
-
-*cstdlib*
-
-*ctime*
 
 
 
